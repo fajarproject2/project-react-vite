@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import UserDropdown from "./UserDropdown";
+import UserDropDown from "./UserDropDown";
 
 function Navbar() {
   const { user } = useAuth();
@@ -37,7 +37,7 @@ function Navbar() {
 
         <li>
           {user ? (
-            <UserDropdown />
+            <UserDropDown />
           ) : (
             <NavLink to="/login" className={linkClass}>
               Login
